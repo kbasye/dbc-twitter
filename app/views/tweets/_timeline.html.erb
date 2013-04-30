@@ -1,0 +1,14 @@
+<div class='timeline'>
+	<h3><%= @user.username %>'s Tweets</h3>
+	<% tweets.each do |tweet| %>
+		<article class='tweet'>
+			<p class='body'><%= tweet.body %></p>
+			<p class='meta'>
+				<%= time_ago_in_words(tweet.created_at) %> ago 
+				<% if params[:id].to_i == current_user.id %>
+					<%= render 'tweets/delete', :tweet => tweet %>
+				<% end %>
+			</p>
+		</article>
+	<% end %>
+</div>

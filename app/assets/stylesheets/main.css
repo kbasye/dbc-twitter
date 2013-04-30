@@ -1,0 +1,17 @@
+.container {
+	width: 960px;
+	margin: auto;
+}
+
+.timeline {
+	float: left;
+	width: 50%;
+}
+
+article.tweet {
+	border-bottom: 1px solid #ccc;
+}
+
+.all_users {
+	float: right;
+}

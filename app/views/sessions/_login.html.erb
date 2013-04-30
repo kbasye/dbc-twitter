@@ -1,0 +1,7 @@
+<h3>Log In</h3>
+<%= form_tag(login_path) do %>
+  <%= text_field_tag(:username, nil, :placeholder => "Username") %><br>
+  <%= password_field_tag(:password, nil, :placeholder => "Password") %><br>
+
+  <%= submit_tag("Log In!", :class => 'btn') %>
+<% end %>

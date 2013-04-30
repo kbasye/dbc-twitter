@@ -1,0 +1,4 @@
+<%= form_tag(@tweet) do %>
+  <%= text_area(:body, nil, :placeholder => "Post your Tweet") %><br>
+  <%= submit_tag("Post!", :class => 'btn') %>
+<% end %>

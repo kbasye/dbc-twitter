@@ -1,0 +1,10 @@
+
+
+<% if params[:id] == current_user.id %>
+	<%= render 'tweets/timeline', :tweets => current_user.tweets %>
+<% else %>
+	<%= render 'tweets/timeline', :tweets => @user.tweets %>
+<% end %>
+
+
+<%= render 'users/list', :tweets => @tweets %>
